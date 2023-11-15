@@ -15,34 +15,30 @@ private:
 
 public:
 	station();
-	rame(int, int, float, int);
+	station(string, bool, bool, bool, int);
 	void print();
-	void setA(int, int);
-	void setB(float, int);
+	void setA(string);
+	void setB(int);
 
 };
 
 
-rame::rame() {
+station::station() {
 
 }
 
-rame::rame(int s1, int pos, float vit, int peuple) {
-	serie = s1;
-	position = pos;
-	vitesse = vit;
-	nb_pers = peuple;
+station::station(string gare, int pop) {
+	name = gare;
+	nb_persQ = peuple;
 }
 
 
-void rame::setA(int s1, int pos) {
-	serie = s1;
-	position = pos;
+void station::setA(string gare) {
+	name = gare;
 }
 
-void rame::setB(float vit, int peuple) {
-	vitesse = vit;
-	nb_pers = peuple;
+void rame::setB(int pop) {
+	nb_persQ = pop;
 }
 
 

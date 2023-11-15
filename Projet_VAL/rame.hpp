@@ -7,7 +7,7 @@
 class rame {
 	private : 
 		int serie;
-		int position;
+		int position; //faire un tableau de départ/arrivée
 		float vitesse;
 		int nb_pers;
 		bool doorsOpen;
