@@ -29,7 +29,7 @@ station::station() {
 
 station::station(string gare, int pop) {
 	name = gare;
-	nb_persQ = peuple;
+	nb_persQ = pop;
 }
 
 

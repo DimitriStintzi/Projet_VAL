@@ -8,9 +8,9 @@ class rame {
 	private : 
 		int serie;
 		int position; //faire un tableau de départ/arrivée
-		float vitesse;
-		int nb_pers;
+		float vitesse;		
 		bool doorsOpen;
+		int nb_pers;
 
 public :
 	rame();
@@ -26,11 +26,11 @@ rame::rame() {
 
 }
 
-rame::rame(int s1, int pos, float vit, int peuple) {
+rame::rame(int s1, int pos, float vit, int usagers) {
 	serie = s1;
 	position = pos;
 	vitesse = vit;
-	nb_pers = peuple;
+	nb_pers = usagers;
 }
 
 
@@ -39,9 +39,9 @@ void rame::setA(int s1, int pos) {
 	position = pos;
 }
 
-void rame::setB(float vit, int peuple) {
+void rame::setB(float vit, int usagers) {
 	vitesse = vit;
-	nb_pers = peuple;
+	nb_pers = usagers;
 }
 
 	
