@@ -3,11 +3,11 @@
 
 #pragma once
 #include <iostream>
-#include <string>
+
 
 class station {
 private:
-	string name;
+	char name; 
 	bool enterStation;
 	bool readyToGo;
 	bool doorsOpen;
@@ -15,9 +15,9 @@ private:
 
 public:
 	station();
-	station(string, bool, bool, bool, int);
+	station(char, bool, bool, bool, int);
 	void print();
-	void setA(string);
+	void setA(char);
 	void setB(int);
 
 };
@@ -27,17 +27,17 @@ station::station() {
 
 }
 
-station::station(string gare, int pop) {
+station:station(char gare, int pop) {
 	name = gare;
 	nb_persQ = pop;
 }
 
 
-void station::setA(string gare) {
+void station:setA(char gare) {
 	name = gare;
 }
 
-void rame::setB(int pop) {
+void rame:setB(int pop) {
 	nb_persQ = pop;
 }
 
