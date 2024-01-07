@@ -1,0 +1,32 @@
+Concernant les stations, nous avons créés une classe qui englobe les différentes variables et fonctions permettant de gérer les objets stations. 
+Nous avons le nom de la station, si elle est occupée ou non, si les portes de la station sont ouvertes ou non, si la rame de métro peut repartir, 
+ainsi que le nombre de personnes à quai et la position sur l'écran de la station.
+
+Concernant les fonctions liées à la classe, on retrouve celle permettant d'accéder à chaque information, ainsi que permettant de modifier chaque information
+mais aussi les constructeurs.
+
+Aussi, on peut retrouver une fonction qui permet d'incrémenter automatiquement de façon aléatoire le nombre de passagers en attente à quai. 
+Concernant l'aléatoire, il a fallut trouver une manière d'avoir une valeur aléatoire différente pour chaque station, 
+car avec l'aléatoire normalement utilisé, on se base sur l'heure du processeur en seconde qui est donc le même pour toutes les stations. 
+
+Aussi, on a créé des détections de cliques sur différents éléments, ce qui nous permet de détecter et ainsi afficher les informations d'une rame ou d'une station avec toutes les informations liées. 
+concernant les stations, elle est verte si la station est libre et rouge si une rame est à l'arrêt dedans. 
+Aussi, on détecte si la rame se situe aux coordonnées de la station pour transférer les passagers.
+
+
+
+Cependant, concernant la mise a jour des informations, que ce soit si une rame est sur une station, ou le transfert de passagers, tout ne fonctionne pas comme prévu. 
+Aussi, un problème a était trouvé concernant le changement d'état des stations (leur couleur). 
+Nous avions pensé à définir la couleur quand une rame est sur la station et de remettre la couleur quand aucune rame n'est sur la station mais cela faisait crasher instantanément le programme.
+(surement car il essayait de mettre la couleur verte en boucle ce qui faisait utiliser trop de calcul).
+
+Pour nos rames, nous avons une class rame qui prend en compte le numéro de série d’une rame, le nombre de passagers et un état qui nous permet gérer l’avancement de nos rames. 
+
+D’après notre cahier des charges nous avons bien un circuit fermé de rames qui se stoppent à chaque station, 
+nous avons une accélération ainsi qu’un ralentissement avec une vitesse qui change quand une rame se rapproche ou s’éloigne d’un arrêt.  
+
+Nous avons un système de distance de sécurité entre chaque rame durant leur trajet avec un demi-tour par des voies de réserve. 
+Nous avons un bouton d’arrêt d’urgence qui a pour but de stopper brutalement l’ensemble des rames. 
+ 
+Maintenant en ce qui concerne notre projet, notre arrêt d’urgence n’est pas totalement au point, on ne peut qu'arrêter la première rame avec notre bouton. 
+Pour ce qui est des distances de sécurité entre chaque rame celle-ci n’est pas parfaite, la première rame finie par dépasser nos rames derrière si le superviseur n’appui pas sur le bouton.
