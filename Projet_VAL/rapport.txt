@@ -1,5 +1,5 @@
 
-Pour nos rames, nous avons une classe "Rame" qui prend en compte le numéro de série, le nombre de passagers et un état permettant de gérer l'avancement des rames.
+Pour nos rames, nous avons une classe rame qui prend en compte le numéro de série, le nombre de passagers et un état permettant de gérer l'avancement des rames.
 Selon notre cahier des charges, nous avons mis en place un circuit fermé où les rames s'arrêtent à chaque station. 
 Nous avons également intégré un système d'accélération et de ralentissement, avec une vitesse qui varie en fonction de la proximité ou de l'éloignement d'une station.
 
