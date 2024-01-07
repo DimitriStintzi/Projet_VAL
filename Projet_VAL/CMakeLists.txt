@@ -3,7 +3,7 @@
 #
 
 # Ajoutez une source à l'exécutable de ce projet.
-add_executable (Projet_VAL "Projet_VAL.cpp" "rame.hpp" "station.hpp" "superviseur.hpp" "rame.cpp")
+add_executable (Projet_VAL  "rame.hpp" "rame.cpp" "Val.cpp" "station.cpp" "station.hpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Projet_VAL PROPERTY CXX_STANDARD 20)
